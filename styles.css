@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.house {
+  position: relative;
+  width: 331.908px;
+  height: 700px;
+  background: #000;
+  border-radius: 24px;
+  padding: 8px 8px 15px 8px;
+  margin: 0;
+}
+.light-top {
+  width: 67px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 43px;
+  top: 4px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.light-right {
+  width: 1px;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  left: 326px;
+  top: 180px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.bt-power {
+  width: 2px;
+  height: 33px;
+  background: rgba(255, 0, 0, 0.733);
+  position: absolute;
+  left: 331px;
+  top: 240px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.bt-vol {
+  width: 2px;
+  height: 70px;
+  background: rgba(9, 44, 241, 0.733);
+  position: absolute;
+  left: 331px;
+  top: 155px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.screen {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  background-image: url('./img/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-size: cover;
+  border-radius: 24px;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.header {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  flex-direction:column;
+}
+.dock-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* background: hotpink; */
+  height: 27px;
+  margin-top: 3px;
+  padding-right: 10px;
+}
+.dock-top .icons {
+  width: auto;
+  height: 22px;
+  margin-right: 3px;
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dock-top .icons small {
+  font-size: 0.9em ;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.dock-top .battery {
+  width: 24px;
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5em;
+  padding-top: 2px;
+}
+
+.widgets {
+  display: flex;
+  flex: 1;
+  height: 120px;
+  margin-top: 15px;
+}
+.widget-time {
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+  align-items: center;
+  
+}
+.widget-time .clock {
+  width: 100%;
+  height: 50px;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 100;
+
+}
+.widget-time span {
+  width: 100%;
+  height: 100%;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.widget-climate {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 22px;
+}
+
+.widget-climate .sun {
+  font-size: 3em;
+  font-weight: 100;
+  
+  width: auto;
+  height: auto;
+  margin-top: 7px;
+}
+
+.widget-climate span {
+
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.widget-climate .sun .sun-circle {
+  width: 22px;
+  height: 22px;
+  background: #ffe606;
+  border-radius: 50%;
+  margin-bottom: -15px;
+}
+
+.widget-climate .sun .cloud-a {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: -20px;
+}
+.widget-climate .sun .cloud-b {
+  width: 30px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: -22px;
+  margin-left: -8px;
+}
+
+.sub-header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.sub-header .google-assist {
+  width: 280px;
+  height: 45px;
+  background: #fff;
+  border-radius: 27px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.2em;
+  color: #838383;
+}
+
+.sub-header .google-assist input {
+  border: none;
+  height: 35px;
+  width: 210px;
+}
+
+.sub-header .google-assist .logo-google img {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.sub-header .google-assist .mic-assist {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;  
+  color: #222;
+}
+
+.icons-body {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15px;
+  overflow-y: hidden;
+  margin-top: 100px;
+}
+
+.icons-body .icon {
+  width: 55px;
+  height: 55px;
+  /* background:  rgba(255, 255, 255, 0.7); */
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-body .icon img {
+  width: 45px;
+  height: 45px;
+}
+
+.icons-bottoms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #1e90ff; */
+}
+
+.icons-bottoms .icon-bt {
+  width: 55px;
+  height: 55px;
+  
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  flex-wrap: wrap;
+
+}
+
+.icons-bottoms .icon-bt img {
+  width: 45px;
+  height: 45px;
+}
+
+
+.icons-bottoms .icon-bt-cam { 
+  border-radius: 50%;
+  background: #fff;
+}
+
+.chrome {
+  background: rgba(255, 255, 255, 0.7);
+}
+.icons-bottoms .icon-bt .cam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.icons-bottoms .icon-bt .cam-b {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-bottoms .icon-bt .cam-b .cam-b-a {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.icons-bottoms .icon-bt img {
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+}
+
+.icons-bottoms .icon-1 img, .size45 {
+  width: 40px;
+  height: 40px;
+  font-size: 2.5em;
+  color: #0060c0;
+}
+
+.invert { 
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
