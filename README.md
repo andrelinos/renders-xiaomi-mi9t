@@ -2,4 +2,4 @@
 
 Feito com HTML, CSS, SVG, Fontawesome e Flaticon
 
-![alt text](https://github.com/andrelinos/renders-xiaomi-mi9t/blob/master/img/wallpaper.jpg?raw=true)
+![alt text](https://github.com/andrelinos/renders-xiaomi-mi9t/blob/master/render-xiaomi-mi-9t.png)
